@@ -1,0 +1,163 @@
+.rodape_cursos{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+
+    background-color: #324c64;
+    padding: 25px 15px;
+}
+
+.rodape_cursos_mapa{
+    color: white;
+}
+
+.rodape_cursos_box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rodape_cursos_lang{
+    display: flex;
+    flex-flow:column;
+    gap: 5px;
+}
+
+.rodape_cursos_lang_titulo{
+    padding-left: 5px;
+    border-left: 4px solid;
+    line-height: 27px;
+}
+
+.rodape_cursos_lang_titulo:first-child{
+    margin-bottom: 10px;
+}
+
+.rodape_cursos_lang_titulo_um{
+    border-color: #25c882;
+    color: #25c882;
+}
+
+.rodape_cursos_lang_titulo_dois{
+    border-color: #5ec6f3;
+    color: #5ec6f3;
+}
+
+.rodape_cursos_lang_titulo_tres{
+    border-color: #ad85bf;
+    color: #ad85bf;
+}
+
+.rodape_cursos_lang_titulo_quatro{
+    border-color: #ec6e5a;
+    color: #ec6e5a;
+}
+
+.rodape_cursos_lang p{
+    color: white;
+}
+
+.fim{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.fim_parceiros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin: 15px 10%;
+}
+
+.fim_parceiros_image{
+    width: 26%;
+}
+
+.fim_contato{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+
+    margin: 10px 10px 20px;
+}
+
+.fim_contato_enviar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    width: 80%;
+    height: 2.5rem;
+
+    border: 1px #4dba7a solid;
+    border-radius: 10px;
+}
+
+.fim_contato_enviar_texto{
+    width: 100%;
+
+    border: none;
+    border-radius: 1em 0 0 1em;
+
+    background-color: #f2f5f7;
+}
+
+.fim_contato_enviar_botao{
+    padding: 10px;
+
+    border: none;
+    border-radius: 0 0.5em 0.5em 0;
+    background-color: #4dba7a;
+    color: white;
+}
+
+.fim_contato_enviar_botao:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #2b8e54;
+}
+
+@media (min-width:700px){
+    .rodape_cursos{
+        text-align: center;
+    }
+
+    .rodape_cursos_box{
+        flex-flow: row;
+        justify-content: space-around;
+    }
+
+    .rodape_cursos_lang{
+        text-align: left;
+        gap: 10px;
+    }
+
+    .fim{
+        padding: 20px 6%;
+
+        flex-flow: row;
+        justify-content: space-around;  
+    }
+
+    .fim_parceiros{
+        width: 40%;
+        margin: 20px;
+
+        gap: 20px;
+    }
+
+    .fim_contato{
+        width: 60%;
+        margin: 20px;
+
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 3%;
+    }
+
+    .fim_contato_enviar{
+        width: 64%;
+    }
+}

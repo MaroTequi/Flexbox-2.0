@@ -1,0 +1,144 @@
+.cursos{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: 20px 15px;
+}
+
+.cursos_titulo{
+    margin: 0 0 20px 0;
+}
+
+.cursos_lista{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2%;
+}
+
+.cursos_lista_item{
+    width: 90%;
+    margin: 15px 0;
+}
+
+.cursos_lista_item_ancora{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px #d4d5d6;
+
+    background-color: white;
+}
+
+.cursos_lista_item_img{
+    width: 100%;
+    height: 60px;
+}
+
+.cursos_lista_item_link{
+    font-weight: bold;
+}
+
+.infos{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    padding: 30px 8%;
+
+    gap: 20px;
+
+    background-color: #5e9edc;
+}
+
+.infos_videos{
+    width: 90%;
+}
+
+.infos_dados{
+    display: flex;
+    flex-flow:column nowrap;
+    gap: 15px;
+
+    text-align: center;
+
+    color: white;
+}
+
+.infos_dados_botão{
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 10px;    
+    background-color: #ec6e5a;
+
+    font-size: 1rem;
+    color: white;
+}
+
+.infos_dados_botão:hover{
+    cursor: pointer;
+    background-color: #fa5e46;
+    transition: 0.5s;
+}
+
+@media (min-width: 700px){
+    .cursos{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 20px 100px;
+    }
+
+    .cursos_titulo{
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .cursos_lista{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .cursos_lista_item{
+        width: 23%;
+    }
+
+    .cursos_lista_item:hover{
+        box-shadow: 4px 4px 4px #d4d5d6;
+        transition: 0.2s;
+    }
+
+    .infos{
+        height: 275px;
+
+        flex-flow: row;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .infos_videos{
+        width: 50%;
+        height: 100%;
+    }
+
+    .infos_dados{
+        height: 90%;
+
+        justify-content: space-between;
+
+        flex-grow: 1;
+    }
+}

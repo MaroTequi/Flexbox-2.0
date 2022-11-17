@@ -1,0 +1,49 @@
+/* font-family: 'Island Moments', cursive;
+
+font-family: 'Open Sans', sans-serif; */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    background-color: #f2f5f7;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+h5{
+    font-size: 1rem;
+}
+
+p{
+    font-size: 0.8rem;
+}
+
+header{
+    background-color: white;
+}
+
+body a{
+    text-decoration: none;
+    color: black;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media (min-width: 700px){
+    body{
+        font-size: 20px;
+        transition: 1s;
+    }
+}
